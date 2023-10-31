@@ -1,0 +1,104 @@
+header {
+    padding: 1rem 3rem 0 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+
+    @include responsive(pc) {
+        padding: 3rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: normal;
+    }
+
+    @include responsive(tablet) {
+        padding: 1rem;
+    }
+
+    .nav-media {
+        @include responsive(pc) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-width: 100%;
+        }
+
+        h1 {
+            font-family: $titleFont;
+            font-size: 4rem;
+            letter-spacing: 3px;
+    
+            @include responsive(tablet) {
+                font-size: 2.5rem;
+            }
+        }
+
+        .menu {
+            display: none;
+            float: right;
+    
+            i {
+                color: #ffffff;
+                font-size: 3rem;
+            }
+    
+            @include responsive(pc) {
+                display: block;
+            }
+        }
+    }
+
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        font-family: $mainFont;
+        text-transform: uppercase;
+
+        @include responsive(pc) {
+            flex-direction: column;
+            align-items: flex-start;
+            padding-top: 2rem;
+        }
+
+        li a {
+            font-size: 1.6rem;
+
+            &:hover {
+                color: $yellow;
+            }
+        }
+    }
+}
+
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 4rem;
+    gap: 2rem;
+
+    @include responsive(pc) {
+        display: none;
+    }
+
+    i {
+        background-color: $red;
+        padding: 1rem;
+        font-size: 2rem;
+        border-radius: 50%;
+        text-align: center;
+        cursor: pointer;
+        @include hover;
+        color: $yellow;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .none {
+        display: none !important;
+    }
+}

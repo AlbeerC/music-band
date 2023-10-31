@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+// Fonts
+$mainFont: 'Michroma', sans-serif;
+$textFont: 'Poppins', sans-serif;
+$titleFont: 'Pacifico', cursive;
+
+// Colors
+$red: #8a1406;
+$yellow: #e9b300;
+
+
+// Mixin responsive
+$pc: 1300px;
+$tablet: 768px;
+@mixin responsive ($medida) {
+    @if $medida == pc {
+        @media (max-width: $pc) {
+            @content;
+        }
+    } @else if $medida == tablet {
+        @media (max-width: $tablet) {
+            @content;
+        }
+    }
+}
+
+// Mixin hover
+
+@mixin hover {
+    transition: ease all 500ms;
+    background-color: $red;
+    color: #ffffff;
+
+    &:hover {
+        background-color: $yellow;
+        color: $red;
+        box-shadow: 0px 0px 20px $yellow;
+    }
+}

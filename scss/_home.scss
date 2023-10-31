@@ -1,0 +1,85 @@
+.home {
+    margin: 10rem 0 5rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+
+    .heart-home {
+        max-width: 50%;
+        animation: heart-pulse 3s infinite;
+        position: relative;
+
+        @include responsive(pc) {
+            max-width: 70%;
+        }
+    }
+
+    .texts {
+        position: absolute;
+        z-index: 2;
+        text-align: center;
+
+        h2, h3 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            font-family: $mainFont;
+
+            @include responsive(tablet) {
+                font-size: 2rem;
+            }
+        }
+
+        .title {
+            max-width: 80rem;
+            height: auto;
+            padding: 2rem 0;
+
+            @include responsive(pc) {
+                max-width: 70vw;
+                padding: 1rem 0;
+            }
+        }
+
+        h3 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+
+            @include responsive(tablet) {
+                margin-bottom: 1rem;
+            }
+        }
+
+        button {
+            color: $red;
+            background-color: $yellow;
+            border-radius: 3rem;
+            border: none;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: $textFont;
+            padding: 1rem 3rem;
+            cursor: pointer;
+            font-size: 2rem;
+            transition: ease all 500ms;
+
+            &:hover {
+                color: $yellow;
+                background-color: $red;
+            }
+        }
+    }
+}
+
+
+
+@keyframes heart-pulse {
+    0%,to {
+        transform: scale(.95)
+    }
+
+    70% {
+        transform: scale(1)
+    }
+}
