@@ -33,44 +33,28 @@
     height: auto;
 }
 .heart1 {
-    left: -500px;
+    left: -600px;
     top: 1000px;
     transform: rotate(100deg);
     animation: heart-pulse 3s infinite;
-
-    @include responsive(pc) {
-        left: -600px;
-    }
 }
 .heart2 {
-    right: -500px;
+    left: -600px;
     top: 2000px;
     transform: rotate(100deg);
     animation: heart-pulse 4s infinite;
-    
-    @include responsive(pc) {
-        left: -600px;
-    }
 }
 .heart3 {
-    left: -500px;
+    left: -600px;
     top: 3000px;
     transform: rotate(45deg);
     animation: heart-pulse 2s infinite;
-
-    @include responsive(pc) {
-        left: -600px;
-    }
 }
 .heart4 {
-    right: -500px;
+    left: -600px;
     top: 4000px;
     transform: rotate(100deg);
     animation: heart-pulse 3s infinite;
-
-        @include responsive(pc) {
-        left: -600px;
-    }
 }
 
 

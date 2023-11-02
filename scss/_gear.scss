@@ -13,10 +13,9 @@
         grid-template-columns: repeat(4, 1fr);
         place-items: center;
         align-items: stretch;
-        margin-top: 5rem;
+        gap: 2rem;
         width: 90vw;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 5rem auto 0 auto;
 
         @include responsive(pc) {
             grid-template-columns: repeat(2, 1fr);
@@ -30,12 +29,8 @@
 
         .member {
             position: relative;
-            width: 27rem;
+            width: 100%;
             height: 30rem;
-
-            @include responsive(pc) {
-                width: 100%;
-            }
 
             &:hover {
 
@@ -80,6 +75,18 @@
                 position: absolute;
                 text-align: center;
             }
+        }
+    }
+
+    .poster {
+        width: 90vw;
+        height: 90vh;
+        display: block;
+        margin: 20rem auto;
+
+        @include responsive(tablet) {
+            margin: 15rem auto 10rem auto;
+            height: auto;
         }
     }
 }

@@ -7,12 +7,12 @@
     color: #ffffff;
 
     .heart-home {
-        max-width: 50%;
+        max-width: 60%;
         animation: heart-pulse 3s infinite;
         position: relative;
 
         @include responsive(pc) {
-            max-width: 70%;
+            max-width: 90%;
         }
     }
 
@@ -37,7 +37,7 @@
             padding: 2rem 0;
 
             @include responsive(pc) {
-                max-width: 70vw;
+                max-width: 90vw;
                 padding: 1rem 0;
             }
         }
@@ -52,21 +52,10 @@
         }
 
         button {
-            color: $red;
-            background-color: $yellow;
-            border-radius: 3rem;
-            border: none;
-            text-align: center;
-            text-transform: uppercase;
-            font-family: $textFont;
-            padding: 1rem 3rem;
-            cursor: pointer;
-            font-size: 2rem;
-            transition: ease all 500ms;
+            @include button;
 
-            &:hover {
-                color: $yellow;
-                background-color: $red;
+            @include responsive(tablet) {
+                padding: 1rem 1.5rem;
             }
         }
     }

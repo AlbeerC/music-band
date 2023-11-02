@@ -40,3 +40,24 @@ $tablet: 768px;
         box-shadow: 0px 0px 20px $yellow;
     }
 }
+
+// Mixin button
+
+@mixin button {
+    color: $red;
+    background-color: $yellow;
+    border-radius: 3rem;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $textFont;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: ease all 500ms;
+
+    &:hover {
+        color: $yellow;
+        background-color: $red;
+    }
+}
