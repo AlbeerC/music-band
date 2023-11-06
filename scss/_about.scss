@@ -1,0 +1,42 @@
+.about {
+    color: #ffffff;
+    max-width: 90vw;
+    margin: 0 auto 10rem auto;
+
+    h2 {
+        font-size: 3rem;
+        text-align: center;
+        margin: 5rem 0;
+        color: $yellow;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        font-size: 2rem;
+        color: $yellow;
+        text-transform: uppercase;
+        margin: 3rem 0;
+    }
+
+    li {
+        list-style: disc;
+        padding: 1rem 0;
+    }
+
+    .title-explosions {
+
+        p {
+            padding: 2rem 0;
+            line-height: 25px;
+            text-align: justify;
+        }
+    }
+
+    .awards {
+
+        p {
+            font-weight: bold;
+            padding: 2rem 0;
+        }
+    }
+}

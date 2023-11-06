@@ -1,5 +1,6 @@
 .explosions {
     position: relative;
+    overflow: hidden;
 }
 
 .stars, .twinkling {
@@ -33,28 +34,44 @@
     height: auto;
 }
 .heart1 {
-    left: -600px;
+    left: -500px;
     top: 1000px;
     transform: rotate(100deg);
     animation: heart-pulse 3s infinite;
+
+    @include responsive(tablet) {
+        left: -600px;
+    }
 }
 .heart2 {
-    left: -600px;
+    right: -500px;
     top: 2000px;
     transform: rotate(100deg);
     animation: heart-pulse 4s infinite;
+
+    @include responsive(tablet) {
+        right: -600px;
+    }
 }
 .heart3 {
-    left: -600px;
+    left: -500px;
     top: 3000px;
     transform: rotate(45deg);
     animation: heart-pulse 2s infinite;
+
+    @include responsive(tablet) {
+        left: -600px;
+    }
 }
 .heart4 {
-    left: -600px;
+    right: -500px;
     top: 4000px;
     transform: rotate(100deg);
     animation: heart-pulse 3s infinite;
+
+    @include responsive(tablet) {
+        right: -600px;
+    }
 }
 
 
